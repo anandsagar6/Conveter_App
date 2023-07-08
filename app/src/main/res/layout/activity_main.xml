@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/s"
+    android:background="@drawable/sl"
     tools:context=".MainActivity">
 
 
@@ -17,12 +17,13 @@
         android:layout_above="@+id/btn1"
 
 
-        android:layout_alignEnd="@+id/edittext"
+
         android:layout_alignParentStart="true"
-        android:layout_marginStart="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
         android:layout_marginLeft="90dp"
         android:layout_marginEnd="-101dp"
-        android:layout_marginBottom="91dp"
+        android:layout_marginBottom="44dp"
         android:fontFamily="@font/baloo_paaji"
         android:hint="Result"
         android:textColor="@color/black"
@@ -34,7 +35,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.073" />
-
 
     <Button
         android:id="@+id/btn1"
@@ -49,7 +49,7 @@
         android:layout_marginBottom="154dp"
         android:background="@drawable/makebutton"
         android:clickable="true"
-        android:onClick="hello"
+
         android:text="Answer"
         android:textAllCaps="true"
         android:textStyle="bold"
@@ -69,23 +69,26 @@
         android:layout_marginBottom="68dp"
         android:background="@drawable/makebutton"
         android:clickable="true"
-        android:onClick="hello"
+
         android:text="Reset"
         android:textAllCaps="true"
         android:textStyle="bold"
         tools:ignore="OnClick" />
 
+
     <EditText
-        android:id="@+id/edittext"
-        android:layout_width="273dp"
-        android:layout_height="72dp"
-        android:layout_above="@+id/btn1"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="268dp"
-        android:ems="10"
-        android:fontFamily="@font/asset"
-        android:hint="Temperature"
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/group"
+        android:layout_alignEnd="@+id/group"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-102dp"
+        android:layout_marginEnd="-98dp"
+        android:layout_marginBottom="504dp"
+        android:fontFamily="@font/baloo_thambi"
+        android:gravity="center"
+        android:hint="Enter Temperature"
         android:inputType="number" />
 
     <RadioGroup
@@ -93,29 +96,31 @@
         android:layout_width="208dp"
         android:layout_height="102dp"
         android:layout_above="@+id/name"
-        android:layout_alignEnd="@+id/edittext"
+
+        android:layout_alignEnd="@+id/name"
         android:layout_alignParentStart="true"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="250dp"
 
+        android:layout_marginLeft="250dp"
         android:layout_marginTop="250dp"
-        android:layout_marginEnd="-98dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp">
 
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="57dp"
             android:fontFamily="serif"
             android:text="Farenheit to Celcius"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
 
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
+            android:baselineAligned="false"
             android:fontFamily="serif"
             android:text="Celcius to Farenheit"
             android:textStyle="bold" />
@@ -123,3 +128,4 @@
 
 
 </RelativeLayout>
+

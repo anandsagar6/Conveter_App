@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".INR_TAKA">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView3"
+            android:layout_width="409dp"
+            android:layout_height="232dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toTopOf="@+id/edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/taka" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn1"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:fontFamily="@font/baloo_paaji"
+            android:hint="Result"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="151dp"
+            android:layout_height="0dp"
+
+            android:layout_alignParentEnd="true"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/makebutton"
+            android:clickable="true"
+            android:text="Answer"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn2"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_alignParentEnd="true"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="47dp"
+
+            android:background="@drawable/makebutton"
+            android:clickable="true"
+            android:text="Reset"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn1"
+            app:layout_constraintStart_toStartOf="@+id/btn1"
+            app:layout_constraintTop_toBottomOf="@+id/btn1"
+            tools:ignore="OnClick" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignStart="@+id/group"
+            android:layout_alignEnd="@+id/group"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:gravity="center"
+            android:hint="Enter Indian Rupee"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

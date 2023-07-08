@@ -13,13 +13,48 @@
         android:theme="@style/Theme.MYDATA"
         tools:targetApi="31">
         <activity
-            android:name=".Third"
+            android:name=".INR_DOLLAR"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity"
+            android:name=".DOLLAR_INR"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".INR_NPL"
+            android:exported="false" />
+        <activity
+            android:name=".INR_SRL"
+            android:exported="false" />
+        <activity
+            android:name=".INR_PAK"
+            android:exported="false" />
+        <activity
+            android:name=".INR_TAKA"
+            android:exported="false" />
+        <activity
+            android:name=".INR_TO_YUAN"
+            android:exported="false" />
+        <activity
+            android:name=".IND_To_Yuan"
+            android:exported="false"
+            android:label="@string/title_activity_ind_to_yuan"
+            android:theme="@style/Theme.MYDATA" />
+        <activity
+            android:name=".INR_TO_POUND"
+            android:exported="false" />
+        <activity
+            android:name=".INR_TO_DOLLER"
+            android:exported="false" />
+        <activity
+            android:name=".Currency_converter"
+            android:exported="false" />
+        <activity
+            android:name=".SecondScreen"
+            android:exported="false" />
+        <activity
+            android:name=".First_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +62,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
